@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>{{ page.title }} - Planet Planet Templates</title>
+   <link rel="stylesheet" href="css/planet.css"   type="text/css">
+   <link rel="icon"       href="i/favicon.png"   type="image/png">
+
+</head>
+<body  style='margin: 0;'>
+
+  {% include banner.html %}
+
+<!-- wrap in container -->
+<div style='margin: 6px;'>
+
+  <div id="header">
+    <span class='big'>Planet Templates</span>
+    <span class='small'>Free Planet Planet Web Site 'n' Feed Templates</span>
+  </div>
+
+  <div id="nav">
+    <a href="index.html">Home</a> |
+    <a href="http://groups.google.com/group/feedreader">What's New? Forum (Questions? Comments?)</a> |
+    <a href="https://github.com/feedreader">Template Repos</a>
+  </div>
+
+    <div id="content">
+      {{ content }}
+      
+      {% include editme.html %}
+    </div>
+</div>
+
+</body>
+</html>
