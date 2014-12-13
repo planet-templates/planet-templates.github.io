@@ -20,7 +20,53 @@ Create your own templates (use `site`, `feed`, `item`, etc.)
 
 ## Site  {#site}
 
-To be done
+Example: Planet Title
+
+~~~
+<%= site.title %>
+~~~
+
+
+Example: List all subscriptions
+
+~~~
+<% site.feeds.each do |feed| %>
+  <%= feed.url %>  or  <%= feed.link %>
+  <%= feed.title %>  or  <%= feed.name %>
+  <%= feed.title2 %>
+  <%= feed.feed_url %>  or  <%= feed.feed %>
+<% end %>
+~~~
+
+
+## Feed {#feed}
+
+Example: Lastest feed items
+
+~~~
+<% items = site.items.latest.limit(24)
+     ItemCursor.new( items ).each do |item,new_date,new_feed| %>
+
+  <% if new_date %>
+    <%= item.published %>
+  <% end %>
+
+  <% if new_feed %>
+    <%= item.feed.url %>  or  <%= item.feed.link %>
+    <%= item.feed.title %>  or  <%= item.feed.name %>
+    <%= item.feed.title2 %>
+  <% end %>
+
+  <% if item.title %>
+    <%= item.title %>
+  <% end %>
+
+  <% item.content %>
+  <% item.url %>  or  <% item.link %>
+  <% item.published %>
+
+<% end %>
+~~~
 
 
 {% include questions.md %}
