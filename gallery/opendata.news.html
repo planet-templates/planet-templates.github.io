@@ -1,0 +1,2893 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta name='generator' content='Pluto 1.3.2 on Ruby 2.1.4 (2014-10-27) [i686-linux]'>
+
+  <title>Planet Open Data News</title>
+
+  <link rel='stylesheet' type='text/css' href='css/news.css'>
+
+  <!-- fix: use script_tag  rails-style ??? -->
+  <script src='js/jquery-2.0.3.min.js'></script>
+  <script src='js/news.js'></script>
+
+  
+  
+
+</head>
+<body>
+
+<h1>Planet Open Data News</h1>
+
+<div class='stream' style='width: 800px;'>
+
+<table>
+ <tr>
+  <td>
+     <div style='width: 50px; max-width: 50px;'></div>
+  </td>
+  <td width='100%'>
+   <!-- 2st column; filler column -->
+  <img src='i/view-headlines.png' id='show-headlines'  title='Switch to headlines only view' width='16' height='16'>
+  <img src='i/view-snippets.png'  id='show-snippets'   title='Switch to snippet view'        width='16' height='16'>
+  <img src='i/view-standard.png'  id='show-fulltext'   title='Switch to full text view'      width='16' height='16'>
+  </td>
+  <td class='last-update' style='white-space: nowrap; text-align: right;'>
+   <!-- 3nd column -->
+    Updated
+   
+  </td>
+ </tr>
+</table>
+
+<!--
+  todo: order first by date and than by feed and than by datetime
+    - lets us group all feed items of a feed group together
+ -->
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://okfnlabs.org/blog'>Open Knowledge Foundation (OKFN) Labs News</a>
+        (
+         <a href='http://okfnlabs.org/blog/feed.xml'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Saturday, 03 January 2015</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://okfnlabs.org/blog/2015/01/03/data-curators-wanted-for-core-datasets.html'>Wanted - Data Curators to Maintain Key Datasets in High-Quality, Easy-to-Use and Open Form</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  <p>Wanted: volunteers to join a team of “Data Curators” maintaining “core” datasets (like GDP or ISO-codes) in high-quality, easy-to-use and open form.</p>
+
+<ul>
+  <li>What is the project about: Collecting and maintaining important and commonly-used (“core”) datasets in high-quality, standardized and
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>Wanted: volunteers to join a team of “Data Curators” maintaining “core” datasets (like GDP or ISO-codes) in high-quality, easy-to-use and open form.</p>
+
+<ul>
+  <li>What is the project about: Collecting and maintaining important and commonly-used (“core”) datasets in high-quality, standardized and easy-to-use form - in particular, as up-to-date, well-structured Data Packages.<br>
+The “Core Datasets” effort is part of the broader Frictionless Data initiative.</li>
+  <li>What would you be doing: identifying and locating core (public) datasets, cleaning and standardizing the data and making sure the results are kept up to date and easy to use</li>
+  <li>Who can participate: anyone can contribute. Details on the skills needed are below.</li>
+  <li>Get involved: read more below or jump straight to the sign-up section.</li>
+</ul>
+
+<p>♦</p>
+
+What is the Core Datasets effort?
+
+<p>Summary: Collect and maintain important and commonly-used (“core”) datasets in high-quality, reliable and easy-to-use form (as Data Packages).</p>
+
+<p>Core = important and commonly-used datasets e.g. reference data (country codes) and indicators (inflation, GDP)</p>
+
+<p>Curate = take existing data and provide it in high-quality, reliable, and easy-to-use form (standardized, structured, open)</p>
+
+<ul>
+  <li>Full details: including slide-deck at data.okfn.org/roadmap/core-datasets.</li>
+  <li>Live examples: You can find already packaged core datasets at data.okfn.org/data/ and in “raw” form on Github at github.com/datasets/</li>
+</ul>
+
+
+
+What Roles and Skills are Needed
+
+<p>We need a variety of roles from identifying new “core” datasets to packaging the data to performing quality control (checking metadata etc).</p>
+
+<p>Core Skills - at least one of these skills will be needed:</p>
+
+<ul>
+  <li>Data Wrangling Experience. Many of our source datasets are not complex (just an Excel file or similar) and can be “wrangled” in a Spreadsheet program. What we therefore recommend is at least one of:
+    <ul>
+      <li>Experience with a Spreadsheet application such as Excel or (preferably) Google Docs including use of formulas and (desirably) macros (you should at least know how you could quickly convert a cell containing ‘2014’ to ‘2014-01-01’ across 1000 rows)</li>
+      <li>Coding for data processing (especially scraping) in one or more of python, javascript, bash</li>
+    </ul>
+  </li>
+  <li>Data sleuthing - the ability to dig up data on the web (specific desirable skills: you know how to search by filetype in google, you know where the developer tools are in chrome or firefox, you know how to find the URL a form posts to)</li>
+</ul>
+
+<p>Desirable Skills (the more the better!):</p>
+
+<ul>
+  <li>Data vs Metadata: know difference between data and metadata</li>
+  <li>Familiarity with Git (and Github)</li>
+  <li>Familiarity with a command line (preferably bash)</li>
+  <li>Know what JSON is</li>
+  <li>Mac or Unix is your default operating system (will make access to relevant tools that much easier)</li>
+  <li>Knowledge of Web APIs and/or HTML</li>
+  <li>Use of curl or similar command line tool for accessing Web APIs or web pages</li>
+  <li>Scraping using a command line tool or (even better) by coding yourself</li>
+  <li>Know what a Data Package and a Tabular Data Package are</li>
+  <li>Know what a text editor is (e.g. notepad, textmate, vim, emacs, …) and know how to use it (useful for both working with data and for editing Data Package metadata)</li>
+</ul>
+
+<p></p>
+
+Get Involved - Sign Up Now!
+
+<p>We are looking for volunteer contributors to form a “curation team”.</p>
+
+<ul>
+  <li>Time commitment: Members of the team commit to at least 8-16h per month (though this will be an average - if you are especially busy with other things one month and do less that is fine)</li>
+  <li>Schedule: There is no schedule so you can contribute at any time that is good for you - evenings, weekeneds, lunch-times etc</li>
+  <li>Location: all activity will be carried out online so you can be based anywhere in the world</li>
+  <li>Skills: see above</li>
+</ul>
+
+<p>To register your interest fill in the following form. Any questions, please get in touch directly.</p>
+
+Loading...
+
+Want to Dive Straight In?
+
+<p>Can’t wait to get started as a Data Curator? You can dive straight in and start packaging the already-selected (but not packaged) core datasets. Full instructions here:</p>
+
+<p>data.okfn.org/roadmap/core-datasets#contribute</p>
+
+
+
+</div>
+
+<div class='item-footer'>
+  00:00  &bull;
+    <span class='item-time-ago-in-words'>
+       17 hours ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='https://blog.openstreetmap.org'>Open Street Map (OSM) News</a>
+        (
+         <a href='https://blog.openstreetmap.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Friday, 02 January 2015</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.openstreetmap.org/2015/01/02/four-new-tile-servers/'>Four New Tile Servers</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Have you noticed faster tiles lately? Browsing the map on openstreetmap.org should now be even more responsive. Three new servers, started providing tiles over the last 2 weeks, joining a server which started earlier in the year. Tile server saphira, located in London UK kindly hosted by Jump Network
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>Have you noticed faster tiles lately? Browsing the map on openstreetmap.org should now be even more responsive. Three new servers, started providing tiles over the last 2 weeks, joining a server which started earlier in the year.</p>
+<ul>
+<li>Tile server saphira, located in London UK kindly hosted by Jump Networks.</li>
+<li>Tile server viserion, located in Pula Croatia, kindly hosted by CARNet.</li>
+<li>Tile server stormfly-02, Located in Corvallis USA, kindly hosted by OSUOSL.</li>
+<li>Tile server longma, Located in Hsinchu Taiwan, kindly hosted by NCHC.</li>
+</ul>
+<p>♦<br>
+Map tiles are delivered to users based on their GeoDNS location. The OpenStreetMap tile content delivery network (CDN) now supports EDNS-client-subnet to improve locating the closest region tile cache.</p>
+<p>OpenStreetMap tiles are free for everyone to use, but should be used with moderation. If you are a high traffic site you should look into switch2osm.org to find out how to use the data and keep the tiles available for everyone.</p>
+<p>Thanks to generous donations and active local community members, the OpenStreetMap distributed tile delivery infrastructure continues to grow.</p>
+<p>The OpenStreetMap Foundation seeks additional distributed tile servers. If you would like to donate a tile server and hosting, please see the Tile CDN requirements page on the wiki. You can also support OpenStreetMap by donating to the OpenStreetMap Foundation.</p>
+<p>The OpenStreetMap Foundation is a not-for-profit organization, formed in the UK to support the OpenStreetMap Project. It is dedicated to encouraging the growth, development and distribution of free geospatial data and to providing geospatial data for anyone to use and share. The OpenStreetMap Foundation owns and maintains the infrastructure of the OpenStreetMap project.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  12:38  &bull;
+    <span class='item-time-ago-in-words'>
+       a day ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='https://blog.openstreetmap.org'>Open Street Map (OSM) News</a>
+        (
+         <a href='https://blog.openstreetmap.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Sunday, 28 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.openstreetmap.org/2014/12/28/mapazonia/'>Mapazonia</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  The Latin America OpenStreetMap community was created recently and we decided to organize collective projects on subjects that are common to many countries of our continent. Our first project is Mapazonia. The Amazon rainforest includes territory belonging to nine different nations and there are a lo
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>The Latin America OpenStreetMap community was created recently and we decided to organize collective projects on subjects that are common to many countries of our continent. Our first project is Mapazonia.</p>
+<p>♦The Amazon rainforest includes territory belonging to nine different nations and there are a lot of environmental institutions and governments that need better geospatial data to do their work in that region. Furthermore it&#8217;s always good to have quality data in case of a natural disaster or other humanitarian issues. In Brazil there aren&#8217;t many editors in this northern region, so there are a lot of towns without any data and some roads to trace.</p>
+<p>The Amazon is huge, it has 5 million and a half square kilometres. So initially we are defining some prioritary areas to map in Tasking Manager. There is already one activity in Brazil and another in Bolivia. The main aim is to improve the tracing of the rivers and the road coverage.</p>
+<p>Soon we will have more areas in others countries. If you want, you can work in others areas of the Amazon. Put the hashtag #mapazonia in your changeset comments, so we can see your edits in this map.</p>
+<p>Visit the site: mapazonia.org, follow the twitter account @mapazonia and enjoy mapping the Amazon!</p>
+
+
+</div>
+
+<div class='item-footer'>
+  10:56  &bull;
+    <span class='item-time-ago-in-words'>
+       6 days ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='https://blog.openstreetmap.org'>Open Street Map (OSM) News</a>
+        (
+         <a href='https://blog.openstreetmap.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Thursday, 25 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.openstreetmap.org/2014/12/25/happy-christmas-from-openstreetmap/'>Happy Christmas from OpenStreetMap</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Happy Christmas from OpenStreetMap to all of our contributors. This sentence doesn&#8217;t actually make sense when I think about it. It&#8217;s a familiar kind of sentence you might see on a company website, but OpenStreetMap is a project. A collaboration. A map, a database and a community. It&#8217
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>♦</p>
+<p>Happy Christmas from OpenStreetMap to all of our contributors.</p>
+<p>This sentence doesn&#8217;t actually make sense when I think about it. It&#8217;s a familiar kind of sentence you might see on a company website, but OpenStreetMap is a project. A collaboration. A map, a database and a community. It&#8217;s not a company. I sometimes describe it as a &#8220;nebulous internet collective&#8221;. OpenStreetMap is all of our contributors. So when we say a Happy Christmas from OpenStreetMap, we are all wishing ourselves a Happy Christmas. Maybe it does make sense. I think I can speak for all OpenStreetMappers in wishing each other a Happy Christmas.</p>
+<p>We&#8217;re all working together on this project to create an open licensed map of the world, and whether you&#8217;ve met other mappers or not, whether you&#8217;ve engaged in community discussions or not, you have added your contributions and slotted your piece into the jigsaw of this mighty collaborative endeavour. Please turn to the OpenStreetMapper on your left and wish them Happy Christmas! (Or seasons greetings, happy holidays, happy winter festival&#8230; whatever fits)</p>
+<p>And a Happy Christmas to all those who are using OpenStreetMap. All those who have seen maps embedded on a website, downloaded maps to their mobile apps, or printed maps out on paper. We hope you enjoyed OpenStreetMap, and of course there&#8217;s an easy way to give us a Christmas present in return: Get involved!</p>
+
+
+</div>
+
+<div class='item-footer'>
+  16:56  &bull;
+    <span class='item-time-ago-in-words'>
+       9 days ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Thursday, 18 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/12/18/thank-you-to-our-outgoing-ceo/'>Thank You to Our Outgoing CEO</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  This is a joint blog post by Open Knowledge CEO Laura James and Open Knowledge Founder and President Rufus Pollock. In September we announced that Laura James, our CEO, is moving on from Open Knowledge and we are hiring a new Executive Director. From Rufus: I want to express my deep appreciation for 
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>This is a joint blog post by Open Knowledge CEO Laura James and Open Knowledge Founder and President Rufus Pollock.</p>
+
+<p>In September we announced that Laura James, our CEO, is moving on from Open Knowledge and we are hiring a new Executive Director.</p>
+
+<p>From Rufus: I want to express my deep appreciation for everything that Laura has done. She has made an immense contribution to Open Knowledge over the last 3 years and has been central to all we have achieved. As a leader, she has helped take us through a period of incredible growth and change and I wish her every success on her future endeavours. I am delighted that Laura will be continuing to advise and support Open Knowledge, including joining our Advisory Council. I am deeply thankful for everything she has done to support both Open Knowledge and me personally during her time with us.</p>
+
+<p>From Laura: It’s been an honour and a pleasure to work with and support Open Knowledge, and to have the opportunity to work with so many brilliant people and amazing projects around the world. It’s bittersweet to be moving on from such a wonderful organisation, but I know that I am leaving it in great hands, with a smart and dedicated management team and a new leader joining shortly. Open Knowledge will continue to develop and thrive as the catalyst at the heart of the global movement around freeing data and information, ensuring knowledge creates power for the many, not the few.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  10:30  &bull;
+    <span class='item-time-ago-in-words'>
+       16 days ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='https://blog.openstreetmap.org'>Open Street Map (OSM) News</a>
+        (
+         <a href='https://blog.openstreetmap.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Friday, 12 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.openstreetmap.org/2014/12/12/josm-new-logo/'>A new logo for JOSM, the Java OpenStreetMap Editor</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  JOSM developers have been running a logo design contest these past few months, and a few days ago they announced a winner. Here&#8217;s the brand new logo for JOSM: Congratulations to Diamond00744 on a great design! What is JOSM? JOSM is the &#8220;Java OpenStreetMap Editor&#8221;. It&#8217;s one of 
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>JOSM developers have been running a logo design contest these past few months, and a few days ago they announced a winner. Here&#8217;s the brand new logo for JOSM:</p>
+<p>♦</p>
+<p>Congratulations to Diamond00744 on a great design!</p>
+What is JOSM?
+<p>JOSM is the &#8220;Java OpenStreetMap Editor&#8221;. It&#8217;s one of several software options you can choose to make edits to OpenStreetMap. The other popular choice is to edit by simply clicking the &#8220;edit&#8221; button on the website. This is the &#8220;iD&#8221; editor.  By contrast JOSM must be downloaded. It will run as a separate application on your desktop.</p>
+<p>♦</p>
+<p>Here is Tordanik&#8217;s summary of &#8220;the benefits of working with JOSM&#8220;:</p>
+<ul>
+<li>Efficiency: edit faster with well thought-out keyboard shortcuts, a powerful search function, filters to hide data you don&#8217;t want to edit, and the largest available selection of editing tools of all editors</li>
+<li>Validation: make sure your data is clean before you upload by using the built-in validator</li>
+<li>Offline editing: save your partially completed work locally, work with your private GPS tracks or photographs without having to upload them</li>
+<li>Customization: customize keyboard shortcuts, pick from high-quality plugins for specialized tasks, enable UI dialogs for experimental features, change how the editor&#8217;s map rendering looks</li>
+<li>Cutting-edge mapping: get tool support for emerging mapping topics like lane mapping or 3D mapping</li>
+</ul>
+<p>There&#8217;s disadvantages too of course. Your choice of editor may come down to personal preference. In general iD is designed as a beginner friendly easier experience for our new users on the website, while JOSM is more feature-rich and popular among experienced mappers. This is reflected in the stats which Oli Wan has been maintaining on the &#8216;Editor usage stats&#8217; wiki page . He observes that JOSM users are responsible for doing the most editing, despite &#8220;iD&#8221; reaching the largest number of users.</p>
+<p>So if you&#8217;ve only tried the &#8220;iD&#8221; editor, and those advantages sound interesting then maybe you should give JOSM a try. There are various guides and tutorials to help you learn, including the JOSM Guide on the wiki and LearnOSM.org , but firstly download JOSM from josm.openstreetmap.de  (It&#8217;s lovely new logo is now part of the download as of version 7777) The JOSM website also has the issue tracker and code repository.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  12:22  &bull;
+    <span class='item-time-ago-in-words'>
+       22 days ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.schema.org'>schema.org News</a>
+        (
+         <a href='http://blog.schema.org/feeds/posts/default'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Thursday, 11 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.schema.org/feeds/6397845903611162178/comments/default'>Schema.org v1.92: Music, Video Games, Sports, Itemlist, breadcrumbs and more!</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  We are happy to announce version v1.92 of schema.org. With this update we "soft launch" a substantial collection of improvements that will form the basis for a schema.org version 2.0 release in early 2015. There remain a number of site-wide improvements, bugfixes and clarifications that we'd like to 
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  We are happy to announce version v1.92 of schema.org. With this update we "soft launch" a substantial collection of improvements that will form the basis for a schema.org version 2.0 release in early 2015. There remain a number of site-wide improvements, bugfixes and clarifications that we'd like to make before we feel ready to use the name "v2.0". However the core vocabulary improvements are stable and available for use from today. As usual see the release notes page&nbsp;for details.<br><br>Please get in touch via the W3C Web Schemas group or our Github issue&nbsp;tracker if you'd like to share feedback with us and the wider schema.org community. We won't go into the details of each update in today's blog post, but there are a lot of additions and fixes, and more coming in 2015. Many thanks to all those who contributed to this release!
+
+</div>
+
+<div class='item-footer'>
+  15:28  &bull;
+    <span class='item-time-ago-in-words'>
+       23 days ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Wednesday, 10 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/12/10/a-round-up-of-open-knowledge-community-events-around-the-world/'>A round-up of Open Knowledge Community events around the world!</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  One of the best opportunities that being part of a community offers is the chance to collaborate and make things happen together – and when we want this to happen in sync, what&#8217;s better than convening an (in person or online) event? Just before the end of the year, let&#8217;s collect a few hig
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>One of the best opportunities that being part of a community offers is the chance to collaborate and make things happen together – and when we want this to happen in sync, what&#8217;s better than convening an (in person or online) event?</p>
+
+<p>Just before the end of the year, let&#8217;s collect a few highlights from the Open Knowledge Community events you posted about on the Community Stories Tumblr (so nicely curated by Kathleen Luschek of the Public Library of Science – thank you!)!</p>
+
+<ul>
+<li>Open Knowledge Philippines represent at Maker Festival Manila 2014</li>
+</ul>
+
+<p>♦</p>
+
+<p>Joseph De Guia, Open Knowledge Philippines local group ambassador, TJ Dimacali, journalist and media manager, and Happy Feraren, School of Data Fellow participated in the festival exhibition and lightning talks series spreading the word about the Open Government Data, Lobbying Transparency, Open Education, Open Spending working groups and the School of Data programme. Find out more about it here.</p>
+
+<ul>
+<li>Open Knowledge El Salvador at the 7th Regional Preparatory Meeting for the Internet Governance Forum (IGF)</li>
+</ul>
+
+<p>♦</p>
+
+<p>Open Knowledge El Salvador local ambassador Iris Palma, joined the panel focusing on Open Data and Open Access together with Caroline Burle from W3C (Brazil) and Pilar Saenz from Fundacion Karisma (Colombia). Further information about the event can be found here.</p>
+
+<ul>
+<li>More from El Salvador: I Encuentro por el Conocimiento Abierto!</li>
+</ul>
+
+<p>In line with the OKFestival (in Berlin) and the Latin American and Caribbean Internet Governance Forum (in San Salvador), Open Knowledge El Salvador, Creative Commons El Salvador and Association of Librarians of El Salvador celebrated the first Open Knowledge Meeting in El Salvador). The event focused on Open Knowledge, Open Data, Creative Commons Licenses, Open Education and the Declaration for Open Knowledge in El Salvador. Congratulations!</p>
+
+<ul>
+<li>Open Knowledge Greece at the open consultation of the Greek Action Plan for Open Governance 2014 &#8211; 2016</li>
+</ul>
+
+<p>♦</p>
+
+<p>Open Knowledge Greece organized an open workshop to discuss and propose the positions and proposals of the group on the National Action Plan. Please find here all comments and suggestions that were stated in the meeting, published in both Greek and English.</p>
+
+<ul>
+<li>Air pollution in Paris: a data expedition</li>
+</ul>
+
+<p>♦</p>
+
+<p>Open Knowledge France hosted a data expedition in Paris at La Gaité Lyrique during the digital festival Futur en Seine to find, analyse, visualise and tell stories with existing open data on air pollution. All about it on the group&#8217;s blog!</p>
+
+<p>These are wonderful examples of what happens when we get together, all you event organizers out there rock! Are you running an Open Knowledge event? We want to hear from you – please submit quick posts about your events to the Community Tumblr (details about how/where here). Let&#8217;s share the community&#8217;s great work, inspire each other, and spread the open knowledge love far and wide!</p>
+
+<p>Post a link to your favorite 2014 open knowledge event in the comments below:</p>
+
+
+</div>
+
+<div class='item-footer'>
+  18:28  &bull;
+    <span class='item-time-ago-in-words'>
+       24 days ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Tuesday, 09 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/12/09/the-global-open-data-index-2014-is-now-live/'>The Global Open Data Index 2014 is now live!</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  The Global Open Data Index 2014 team is thrilled to announce that the Global Open Data Index 2014 is now live! We would not have arrived here without the incredible support from our network and the wider open knowledge community in making sure that so many countries/places are represented in the Inde
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>♦</p>
+
+<p>The Global Open Data Index 2014 team is thrilled to announce that the Global Open Data Index 2014 is now live!</p>
+
+<p>We would not have arrived here without the incredible support from our network and the wider open knowledge community in making sure that so many countries/places are represented in the Index and that the agenda for open data moves forward.  We’re already seeing this tool being used for advocacy around the world, and hope that the full and published version will allow you to do the same!</p>
+
+How you can help us spread the news
+
+<p>You can embed a map for your country on your blog or website by following these instructions.</p>
+
+<p>Press materials are available in 6 languages so far (English, German, Spanish, Portuguese, Japanese and French), with more expected. If you want to share where you are please share a link to our press page. If you see any coverage of the Global Open Data Index, please submit them to us via this form so we can track coverage.</p>
+
+<p>We are really grateful for everyone’s help in this great community effort!</p>
+
+Here are some of the results of the Global Open Data Index 2014
+
+<p>The Global Open Data Index ranks countries based on the availability and accessibility of information in ten key areas, including government spending, election results, transport timetables, and pollution levels.</p>
+
+<p>The UK tops the 2014 Index retaining its pole position with an overall score of 96%, closely followed by Denmark and then France at number 3 up from 12th last year. Finland comes in 4th while Australia and New Zealand share the 5th place. Impressive results were seen from India at #10 (up from #27) and Latin American countries like Colombia and Uruguay who came in joint 12th .</p>
+
+<p>Sierra Leone, Mali, Haiti and Guinea rank lowest of the countries assessed, but there are many countries where the governments are less open but that were not assessed because of lack of openness or a sufficiently engaged civil society.</p>
+
+<p>Overall, whilst there is meaningful improvement in the number of open datasets (from 87 to 105), the percentage of open datasets across all the surveyed countries remained low at only 11%.</p>
+
+<p>Even amongst the leaders on open government data there is still room for improvement: the US and Germany, for example, do not provide a consolidated, open register of corporations. There was also a disappointing degree of openness around the details of government spending with most countries either failing to provide information at all or limiting the information available &#8211; only two countries out of 97 (the UK and Greece) got full marks here. This is noteworthy as in a period of sluggish growth and continuing austerity in many countries, giving citizens and businesses free and open  access to this sort of data would seem to be an effective means of saving money and improving government efficiency.</p>
+
+<p>Explore the Global Open Data Index 2014 for yourself!</p>
+
+
+</div>
+
+<div class='item-footer'>
+  16:45  &bull;
+    <span class='item-time-ago-in-words'>
+       25 days ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Tuesday, 02 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/12/02/introducing-open-education-data/'>Introducing Open Education Data</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Open education data is a relatively new area of interest with only dispersed pockets of exploration having taken place worldwide. The phrase &#8216;open education data&#8217; remains loosely defined but might be used to refer to: all openly available data that could be used for educational purpose op
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>Open education data is a relatively new area of interest with only dispersed pockets of exploration having taken place worldwide. The phrase &#8216;open education data&#8217; remains loosely defined but might be used to refer to:</p>
+
+<ul>
+    <li>all openly available data that could be used for educational purpose</li>
+    <li>open data that is released by education institutions</li>
+</ul>
+
+<p>Understood in the former sense, open education data can be considered a subset of open education resources (OERs) where data sets are made available for use in teaching and learning.  These data sets might not be designed for use in education, but can be repurposed and used freely.</p>
+
+<p>In the latter sense, the interest is primarily around the release of data from academic institutions about their performance and that of their students.  This could include:</p>
+
+<ul>
+    <li>Reference data such as the location of academic institutions</li>
+    <li>Internal data such as staff names, resources available, personnel data, identity data, budgets</li>
+    <li>Course data, curriculum data, learning objectives,</li>
+    <li>User-generated data such as learning analytics, assessments, performance data, job placements</li>
+    <li>Benchmarked open data in education that is released across institutions and can lead to change in public policy through transparency and raising awareness.</li>
+</ul>
+
+<p>Last week I gave a talk at the at the LTI NetworkED Seminar series run by the London School of Economics Learning Technology and Innovation Department introducing open education data. The talk ended up being a very broad overview of how we can use open data sets to meet educational needs and the challenges and opportunities this presents, so for example issues around monitoring and privacy. Prior to giving the talk I was interviewed for the LSE blog.</p>
+
+<p>A video of the talk is available on the CLTSupport YouTube Channel and embedded below.</p>
+
+
+
+
+</div>
+
+<div class='item-footer'>
+  15:29  &bull;
+    <span class='item-time-ago-in-words'>
+       1 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='https://blog.openstreetmap.org'>Open Street Map (OSM) News</a>
+        (
+         <a href='https://blog.openstreetmap.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Monday, 01 December 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.openstreetmap.org/2014/12/01/new-query-feature/'>New query feature</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  A couple of weeks ago we mentioned a brand new feature on the OpenStreetMap.org homepage. On the right hand side we have a new &#8220;?&#8221; button which lets you query the map. On openstreetmap.org, zoom in somewhere Click the &#8220;?&#8221; button to enter query mode Click the map on something y
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>A couple of weeks ago we mentioned a brand new feature on the OpenStreetMap.org homepage. On the right hand side we have a new &#8220;?&#8221; button which lets you query the map.</p>
+<ul>
+<li>On openstreetmap.org, zoom in somewhere</li>
+<li>Click the &#8220;?&#8221; button to enter query mode</li>
+<li>Click the map on something you are interested in</li>
+<li>Hover over the results, and choose one to find out more</li>
+</ul>
+<p>♦</p>
+<p>When you query a spot on the map, this new tool will retrieve nearby points of interest from the OpenStreetMap database, and let you quickly drill down to all of the detailed tagging information we have in that database.</p>
+More than a map
+<p>This new tool helps highlight a crucial point about OpenStreetMap. It&#8217;s so much more than just a visual map. OpenStreetMap is a rich database of geo-located information, only some of which is visible on the &#8220;standard&#8221; view of the map. Other information is visible via different layers (such as cycle routes presented on the cycling layer) and all of the data can be viewed by enabling the &#8220;map data&#8221; layer (also on the layer picker panel) but this query tool offers a new window into the OpenStreetMap data, and a new way to discover all the details our contributors are adding to the database.</p>
+<p>For developers this data opens up a world of possibilities. All the data is available to download for free.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  15:08  &bull;
+    <span class='item-time-ago-in-words'>
+       1 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Friday, 28 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/11/28/competition-now-open-enter-your-app-and-win-5000-euro/'>Competition now open – enter your app and win 5,000 euro</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  This is a cross-post by Ivonne Jansen-Dings, originally published on the Apps4Europe blog, see the original here. With 10 Business Lounges happening throughout Europe this year, Apps for Europe is trying to find the best open data applications and startups that Europe has to offer. We invite all deve
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>This is a cross-post by Ivonne Jansen-Dings, originally published on the Apps4Europe blog, see the original here.</p>
+
+<p>♦With 10 Business Lounges happening throughout Europe this year, Apps for Europe is trying to find the best open data applications and startups that Europe has to offer. We invite all developers, startups and companies that use open data as a recourse to join our competition and win a spot at the International Business Lounge @ Future Everything in February 2015.</p>
+
+Last year&#8217;s winner BikeCityGuide.org has shown the potential of using open data to enhance their company and expand their services. Since the international Business Lounge at Future Everything last year they were able to reach new cities and raise almost 140.000,- in crowdfunding. A true success story!
+
+&nbsp;
+
+<ul>
+<li>Enter your app and join our competition</li>
+<li>Participate in a local Business Lounge to present your idea and find support and investment</li>
+<li>Get an overview of all important competition dates and deadline</li>
+</ul>
+
+Over the past years many local, regional and national app competitions in Europe have been organized to stimulated developers and companies to build new applications with open data. Apps for Europe has taken it to the next level. By adding Business Lounges to local events we introduce the world of open data development to that of investors, accelerators, incubators and more.
+
+&nbsp;
+
+Thijs Gitmans, Peak Capital: “The Business Lounge in Amsterdam had a professional and personal approach. I am invited to this kind of meetings often, and the trigger to actually go or cancel last minute 99% of the time has to do with proper, timely and personal communication.”
+
+&nbsp;
+
+The Apps for Europe competitions will run from 1 September to 31 December 2014, with the final at Future Everything in Manchester, UK, on 26-27 February 2015.
+
+<p>Read more about Apps4Europe here.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  13:55  &bull;
+    <span class='item-time-ago-in-words'>
+       1 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Wednesday, 26 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/11/26/congratulations-to-the-panton-fellows-2013-2014/'>Congratulations to the Panton Fellows 2013-2014</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Samuel Moore, Rosie Graves and Peter Kraker are the 2013-2014 Open Knowledge Panton Fellows &#8211; tasked with experimenting, exploring and promoting open practises through their research over the last twelve months. They just posted their final reports so we&#8217;d like to heartily congratulate th
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>Samuel Moore, Rosie Graves and Peter Kraker are the 2013-2014 Open Knowledge Panton Fellows &#8211; tasked with experimenting, exploring and promoting open practises through their research over the last twelve months. They just posted their final reports so we&#8217;d like to heartily congratulate them on an excellent job and summarise their highlights for the Open Knowledge community.</p>
+
+<p>Over the last two years the Panton Fellowships have supported five early career researchers to further the aims of the Panton Principles for Open Data in Science alongside their day to day research. The provision of additional funding goes some way towards this aim, but a key benefit of the programme is boosting the visibility of the Fellow&#8217;s work within the open community and introducing them to like-minded researchers and others within the Open Knowledge network.</p>
+
+♦<p>On stage at the Open Science Panel Vienna (Photo by FWF/APA-Fotoservice/Thomas Preiss)</p>
+
+<p>Peter Kraker (full report) is a postdoctoral researcher at the Know-Centre in Graz and focused his fellowship work on two facets: open and transparent altmetrics and the promotion of open science in Austria and beyond. During his Felowship  Peter released the open source visualization Head Start, which gives scholars an overview of a research field based on relational information derived from altmetrics. Head Start continues to grow in functionality, has been incorporated into Open Knowledge Labs and is  soon to be made available on a dedicated website funded by the fellowship.</p>
+
+<p>Peter&#8217;s ultimate goal is to have an environment where everybody can create their own maps based on open knowledge and share them with the world. You are encouraged to contribute! In addition Peter has been highly active promoting open science, open access, altmetrics and reproducibility in Austria and beyond through events, presentations and prolific blogging, resulting in some great discussions generated on social media. He has also produced a German summary of open science activities every month and is currently involved in kick-starting a German-speaking open science group through the Austrian and German Open Knowledge local groups.</p>
+
+♦<p>Rosie with an air quality monitor</p>
+
+<p>Rosie Graves  (full report) is a postdoctoral researcher at the University of Leicester and used her fellowship to develop an air quality sensing project in a primary school. This wasn&#8217;t always an easy ride, the sensor was successfully installed and an enthusiastic set of schoolhildren were on board, but a technical issue meant that data collection was cut short, so Rosie plans to resume in the New Year. Further collaborations on crowdsourcing and school involvement in atmospheric science were even more successful, including a pilot rain gauge measurement project and development of a cheap, open source air quality sensor which is sure to be of interest to other scientists around the Open Knowledge network and beyond. Rosie has enjoyed her Panton Fellowship year and was grateful for the support to pursue outreach and educational work:</p>
+
+<blockquote>&#8220;This fellowship has been a great opportunity for me to kick start a citizen science project … It also allowed me to attend conferences to discuss open data in air quality which received positive feedback from many colleagues.&#8221;</blockquote>
+
+<p>♦</p>
+
+<p>Samuel Moore (full report) is a doctoral researcher in the Centre for e-Research at King&#8217;s College London and successfully commissioned, crowdfunded and (nearly) published an open access book on open research data during his Panton Year: Issues in Open Research Data. The book is still in production but publication is due during November and we encourage everyone to take a look. This was a step towards addressing Sam&#8217;s assessment of the nascent state of open data in the humanities:</p>
+
+<blockquote>&#8220;The crucial thing now is to continue to reach out to the average researcher, highlighting the benefits that open data offers and ensuring that there is a stock of accessible resources offering practical advice to researchers on how to share their data.&#8221;</blockquote>
+
+<p>Another initiative Sam initiated during the fellowship was establishing the forthcoming Journal of Open Humanities Data with Ubiquity Press, which aims to incentivise data sharing through publication credit, which in turn makes data citable through usual academic paper citation practices. Ultimately the journal will help researchers share their data, recommending repositories and best practices in the field, and will also help them track the impact of their data through citations and altmetrics.</p>
+
+<p>We believe it is vital to provide early career researchers with support to try new open approaches to scholarship and hope other organisations will take similar concrete steps to demonstrate the benefits and challenges of open science through positive action.</p>
+
+<p> Finally, we&#8217;d like to thank the Computer and Communications Industry Association (CCIA) for their generosity in funding the 2013-14 Panton Fellowships. </p>
+
+<p>This blog post a cross-post from the Open Science blog, see the original here.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  11:51  &bull;
+    <span class='item-time-ago-in-words'>
+       1 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Tuesday, 25 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/11/25/code-for-africa-open-knowledge-launch-open-government-fellowship-pilot-programme-apply-today/'>Pioneering Fellowships Will Help Rewire Africa’s Governments</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Open Knowledge and Code for Africa launch pilot Open Government Fellowship Programme. Apply to become a fellow today. This blog announcement is available in French here and Portuguese here. Do you want to help us build African governments and societies that are more accountable and responsive to citi
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>Open Knowledge and Code for Africa launch pilot Open Government Fellowship Programme. Apply to become a fellow today. This blog announcement is available in French here and Portuguese here. </p>
+
+<p>♦
+♦
+♦</p>
+
+<p><br> 
+<br> 
+Do you want to help us build African governments and societies that are more accountable and responsive to citizens?
+<br></p>
+
+<p>We are looking for the best ideas for harnessing the power of digital technologies &amp; open data, to improve the way that governments &amp; citizens interact.</p>
+
+<p>Code for Africa and Open Knowledge are offering three pilot Open Government Fellowships to give outstanding changemakers the skills, tools and resources necessary to kickstart open government initiatives in their countries.
+<br> 
+<br> 
+The six-month fellowships are intended to empower pioneers who are already working in the open data or civic engagement communities, and are designed to augment their existing ‘day jobs’ rather than remove them from their organisations. Successful fellows will therefore only be expected to work part-time on their fellowship projects (which could include new initiatives at their ‘day jobs’), but will receive strategic and material support throughout their fellowship.
+<br> 
+<br> 
+This support will include a modest $1,000 per month stipend, a $3,000 seed fund to kickstart projects, a travel budget to attend local and international events, access to workspace in Code for Africa affiliate civic technology labs across the continent, and technology support from Code for Africa developers and data analysts. Fellows will also be able to tap into Open Knowledge’s School of Data networks and resource kits, and its global network of specialist communities, as well as Code for Africa affiliate communities such as Hacks/Hackers.
+<br> 
+<br> 
+The deadline for applications is 15 December 2014. The fellowships are scheduled to start in February 2015 and run until July 2015.</p>
+
+<p>We are looking for candidates that fit the following profile:
+<ul>
+    <li>Currently engaged in the open government and/or related communities . We are looking to support individuals already actively participating in the open government community</li>
+
+    <li>Understands the role of civil society and citizen based organisations in bringing about positive change through advocacy and campaigning</li>
+  
+    <li>Understands the role and importance of monitoring government commitments on open data as well as on other open government policy related issues</li>
+
+    <li>Has facilitation skills and enjoys community-building (both online and offline).</li>
+
+    <li>Is eager to learn from and be connected with an international community of open government experts, advocates and campaigners </li>
+
+    <li>Currently living and working in Africa. Due to limited resources and our desire to develop a focused and impactful pilot programme, we are limiting applications to those currently living and working in Africa. We hope to expand the programme to the rest of the world starting in 2015.</li>
+</ul></p>
+
+<p>The fellowship will initially be limited to African countries where either Code for Africa or Open Knowledge have extensive resources or deep partnerships. Applicants should therefore be based in one of the following countries:  Angola, Burkina Faso, Cameroon, Ghana, Kenya, Morocco, Mozambique, Mauritius, Namibia, Nigeria, Rwanda, South Africa, Senegal, Tunisia, Tanzania, and Uganda. We hope to expand the initiative to include additional countries later in 2015.
+<br>
+<br>
+The selection committee will pay particular attention to applicants’ current engagement in the open government movement at local, national and/or international level. The committee will also be interested in applicants’ ideas around proposed strategic partnerships and pilot projects for their fellowships. Neither Code for Africa nor Open Knowledge are being prescriptive about the proposed focus or scope for projects, but will prefer projects that demonstrate clear visions with tangible outputs. This could include fellows working with a specific government department or agency to make a key dataset available. It could also include helping communities use available data, or organising a series of events addressing a specific topic or challenge citizens are currently facing.
+<br>
+<br>
+Successful candidates will commit to work on their fellowship activities a minimum of six days a month, including attending online and offline training, organising events, and being an active member both Open Knowledge and Code for Africa communities.
+<br>
+<br>
+While the pilot fellowships are limited to 16 countries initially, we are exploring ways to expand it to other regions. Get in touch if you would like to work with us to do so.
+<br>
+<br>
+Do you have questions? See more about the Fellowship Programme here and have a looks at this Frequently Asked Questions (FAQ) page. If this doesn’t answer your question, email us at Katelyn[dot]Rogers[at]okfn.org</p>
+
+<p>Not sure if you fit the profile? Drop us a line!</p>
+
+<p>Convinced? Apply now to become a Open Government fellow. If you would prefer to submit your application in French or Portuguese, translations of the application form are available in French here and in Portuguese here.</p>
+
+<p>The application will be open until the 15th of December 2014 and the programme will start in February 2015. We are looking forward to hearing from you!</p>
+
+
+</div>
+
+<div class='item-footer'>
+  14:22  &bull;
+    <span class='item-time-ago-in-words'>
+       1 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://ckan.org/blog/'>Comprehensive Knowledge Archive Network (CKAN) News</a>
+        (
+         <a href='http://feeds.feedburner.com/ckanproject'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Friday, 21 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://ckan.org/2014/11/21/new-template-for-ckan-extensions-2/'>New Template for CKAN Extensions</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  We&#8217;ve just merged a new template for CKAN extensions. Whenever you create a new CKAN extension using the paster --plugin=ckan create -t ckanext ... command (as documented in the writing extensions tutorial) it&#8217;ll now use the new template, which gives you: PyPI integration &#8211; setup.py
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>We&#8217;ve just merged a new template for CKAN extensions. Whenever you create a new CKAN extension using the <code>paster --plugin=ckan create -t ckanext ...</code> command (as documented in the writing extensions tutorial) it&#8217;ll now use the new template, which gives you:</p>
+
+<ul>
+  <li>PyPI integration &#8211; <code>setup.py</code> and <code>MANIFEST.in</code> files are automatically generated for your extension, ready for publishing to PyPI</li>
+  
+  <li>A tests directory including stub tests for you to get started writing tests for your extension</li>
+
+  <li>Travis CI integration &#8211; automatically run your tests in a clean environment each time you push a new commit to GitHub. A <code>.travis.yml</code> file and build and run scripts are automatically generated for your extension, you still need to log in to Travis and click the switch to turn on Travis for your extension though.</li>
+
+  <li>Coveralls.io integration &#8211; track the code coverage of your tests. A <code>.coveragerc</code> file is automatically generated for your extension. Again, you still need to login to Coveralls and turn it on.</li>
+
+  <li>A <code>.gitignore</code> file</li>
+
+  <li>A <code>LICENSE</code> file (uses the GNU AGPL by default)</li>
+
+  <li>A reStructuredText <code>README</code> file with a skeleton documentation structure including generated installation and configuration instructions, how to run the tests, etc</li>
+
+  <li>Travis, Coveralls and pypip.in README badges! Show the world that you have continuous integration, good test coverage, PyPI downloads, and your extension&#8217;s supported Python version, development status and license.</li>
+</ul>
+
+<p>♦</p>
+
+<p>For an example of an extension built using this template, look at ckanext-deadoralive.</p>
+
+<p>What we&#8217;re trying to do with this new template is:</p>
+
+<ol>
+  <li>Save ourselves time, by not having to manually create all of this boilerplate every time we roll a new CKAN extension</li>
+  <li>Help improve the quality of CKAN extensions by encouraging developers to write good tests and documentation, and to use services PyPI, Travis and Coveralls</li>
+</ol>
+
+<p>More to come. If you have any ideas for things to add to the CKAN extension template, let us know on ckan-dev</p>
+
+
+</div>
+
+<div class='item-footer'>
+  15:39  &bull;
+    <span class='item-time-ago-in-words'>
+       1 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Wednesday, 19 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/11/19/the-public-domain-review-brings-out-its-first-book/'>The Public Domain Review brings out its first book</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Open Knowledge project The Public Domain Review is very proud to announce the launch of it's very first book: a selection of weird and wonderful essays from the project's first three years.
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <!--magazine.image = publicdomainreview.org/files/2014/11/PDRBook_mockup-narrow.jpg ‎ -->
+
+<p>♦</p>
+
+<p>Open Knowledge project The Public Domain Review is very proud to announce the launch of its very first book! Released through the newly born spin-off project the PDR Press, the book is a selection of weird and wonderful essays from the project&#8217;s first three years, and shall be (we hope) the first of an annual series showcasing in print form essays from the year gone by. Given that there&#8217;s three years to catch up on, the inaugural incarnation is a special bumper edition, coming in at a healthy 346 pages, and jam-packed with 146 illustrations, more than half of which are newly sourced especially for the book.</p>
+
+<p>Spread across six themed chapters – Animals, Bodies, Words, Worlds, Encounters and Networks – there is a total of thirty-four essays from a stellar line up of contributors, including Jack Zipes, Frank Delaney, Colin Dickey, George Prochnik, Noga Arikha, and Julian Barnes.</p>
+
+<p>What&#8217;s inside? Volcanoes, coffee, talking trees, pigs on trial, painted smiles, lost Edens, the social life of geometry, a cat called Jeoffry, lepidopterous spying, monkey-eating poets, imaginary museums, a woman pregnant with rabbits, an invented language drowning in umlauts, a disgruntled Proust, frustrated Flaubert… and much much more.</p>
+
+<p>Order by 26th November to benefit from a special reduced price and delivery in time for Christmas.</p>
+
+<p>If you are wanting to get the book in time for Christmas (and we do think it is a fine addition to any Christmas list!), then please make sure to order before midnight (PST) on 26th November. Orders place before this date will also benefit from a special reduced price!</p>
+
+<p>Please visit the dedicated page on The Public Domain Review site to learn more and also buy the book!</p>
+
+<p>♦</p>
+
+
+</div>
+
+<div class='item-footer'>
+  12:44  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Tuesday, 18 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/11/18/the-heartbeat-of-budget-transparency/'>The heartbeat of budget transparency</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Every two years the International Budget Partnership (IBP) runs a survey, called the Open Budget Survey, to evaluate formal oversight of budgets, how transparent governments are about their budgets and if there are opportunities to participate in the budget process. To easily measure and compare tran
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>♦</p>
+
+<p>Every two years the International Budget Partnership (IBP) runs a survey, called the Open Budget Survey, to evaluate formal oversight of budgets, how transparent governments are about their budgets and if there are opportunities to participate in the budget process. To easily measure and compare transparency among the countries surveyed, IBP created the Open Budget Index where the participating countries are scored and ranked using about two thirds of the questions from the Survey. The Open Budget Index has already established itself as an authoritative measurement of budget transparency, and is for example used as an eligibility criteria for the Open Government Partnership.</p>
+
+<p>However, countries do not release budget information every two years; they should do so regularly, on multiple occasions in a given year. There is, however, as stated above a two year gap between the publication of consecutive Open Budget Survey results. This means that if citizens, civil society organisations (CSOs), media and others want to know how governments are performing in between Survey releases, they have to undertake extensive research themselves. It also means that if they want to pressure governments into releasing budget information and increase budget transparency before the next Open Budget Index, they can only point to ‘official’ data which can be up to two years old.</p>
+
+<p>To combat this, IBP, together with Open Knowledge, have developed the Open Budget Survey Tracker (the OBS Tracker), obstracker.org,: an online, ongoing budget data monitoring tool, which is currently a pilot and covers 30 countries. The data are collected by researchers selected among the IBP’s extensive network of partner organisations, who regularly monitor budget information releases, and provide monthly reports. The information included in the OBS Tracker is not as comprehensive as the Survey, because the latter also looks at the content/comprehensiveness of budget information &#8212; not only the regularity of its publication. The OBS Tracker, however, does provide a good proxy of increasing or decreasing levels of budget transparency, measured by the release to (or witholding from) the public of key budget documents. This is valuable information for concerned citizens, CSOs and media.</p>
+
+<p>With the Open Budget Survey Tracker, IBP has made it easier for citizens, civil society, media and others to monitor, in near real time (monthly), whether their central governments release information on how they plan to and how they spend the public’s money. The OBS Tracker allows them to highlight changes and facilitates civil society efforts to push for change when a key document has not been released at all, or not in a timely manner.</p>
+
+<p>Niger and Kyrgyz Republic have improved the release of essential budget information after the latest Open Budget Index results, something which can be seen from the OBS Tracker without having to wait for the next Open Budget Survey release. This puts pressure on other countries to follow suit.</p>
+
+<p>♦</p>
+
+<p>The budget cycle is a complex process which involves creating and publishing specific documents at specific points in time. IBP covers the whole cycle, by monitoring in total eight documents which include everything from the proposed and approved budgets, to a citizen-friendly budget representation, to end-of-the-year financial reporting and the auditing from a country&#8217;s Supreme Audit Institution.</p>
+
+<p>In each of the countries included in the OBS Tracker, IBP monitors all these eight documents showing how governments are doing in generating these documents and releasing them on time. Each document for each country is assigned a traffic light color code:
+Red means the document was not produced at all or published too late.
+Yellow means the document was only produced for internal use and not released to the general public.
+Green means the document is publicly available and was made available on time.
+The color codes help users quickly skim the status of the world as well as the status of a country they&#8217;re interested in.</p>
+
+<p>♦</p>
+
+<p>To make monitoring even easier, the OBS Tracker also provides more detailed information about each document for each country, a link to the country&#8217;s budget library and more importantly the historical evolution of the “availability status” for each country. The historical visualisation shows a snapshot of the key documents’ status for that country for each month. This helps users see if the country has made any improvements on a month-by-month basis, but also if it has made any improvements since the last Open Budget Survey.</p>
+
+<p>Is your country being tracked by the OBS Tracker? How is it doing? If they are not releasing essential budget documents or not even producing them, start raising questions. If your country is improving or has a lot of green dots, be sure to congratulate the government; show them that their work is appreciated, and provide recommendations on what else can be done to promote openness. Whether you are a government official, a CSO member, a journalist or just a concerned citizen, OBS Tracker is a tool that can help you help your government.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  17:37  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://blog.okfn.org'>Open Knowledge Foundation (OKFN) News</a>
+        (
+         <a href='http://blog.okfn.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Monday, 17 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://blog.okfn.org/2014/11/17/an-unprecedented-public-commons-partnership-for-the-french-national-address-database/'>An unprecedented Public-Commons partnership for the French National Address Database</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  This is a guest post, originally published in French on the Open Knowledge Foundation France blog Nowadays, being able to place an address on a map is an essential information. In France, where addresses were still unavailable for reuse, the OpenStreetMap community decided to create its own National 
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <!-- magazine.image = blog.okfn.org/files/2014/11/image00.png -->
+
+<p>This is a guest post, originally published in French on the Open Knowledge Foundation France blog 
+♦</p>
+
+<p>Nowadays, being able to place an address on a map is an essential information.  In France, where addresses were still unavailable for reuse, the OpenStreetMap community decided to create its own  National Address Database available as open data. The project rapidly gained attention from the government. This led to the signing last week of an unprecedented Public-Commons partnership&nbsp; between the National Institute of Geographic and Forestry Information (IGN), Group La Poste, the new Chief Data Officer and the OpenStreetMap France community.</p>
+
+<p>In August, before the partnership was signed, we met with Christian Quest, coordinator of the project for OpenStreetMap France. He explained the project and its implications to us.</p>
+
+<p></p>
+
+<p></p></p>
+
+<p></p>
+
+<p>Here is a summary of the interview, previously published in French on the Open Knowledge Foundation France blog.
+
+♦<p>Signature of the Public-Commons partnership for the National Address Database  Credit: Etalab, CC-BY</p>
+</p>
+
+<p></p>
+
+Why Did OpenStreetMap (OSM) France decided to create an Open National Address Database? &nbsp;
+
+<p></p>
+
+<p>The idea to create an Open National Address Database came about one year ago after discussions with the Association for Geographic Information in France (AFIGEO). An Address Register was the topic of many reports&nbsp; however these reports can and went without any follow-up and there were more and more people asking for address data on OSM. &nbsp;</p>
+
+<p></p>
+
+<p>Address data are indeed extremely useful. They can be used for itinerary calculations or more generally to localise any point with an address on a map. They are also essentials for emergency rescues &#8211; ambulances, fire-fighters and police forces are very interested in the initiative. &nbsp;</p>
+
+<p></p>
+
+<p>These data are also helpful for the OSM project itself as they enrich the map and are used to improved the quality of the data. The creation of such a register, with so many entries, required a collaborative effort both to scale up and to be maintained. As such, the OSM-France community naturally took it over. However, there was also a technical opportunity; OSM-France had previously developed a tool to collect information from the french cadastre website, which enabled them to start the register with significant amount of information. 
+♦</p>
+
+<p></p>
+
+<p></p>
+
+<p></p></p>
+
+<p></p>
+
+Was there no National Address Registry project in France already? &nbsp;
+
+<p></p>
+
+<p> It existed on papers and in slides but nobody ever saw the beginning of it. It is, nevertheless, a relatively old project, launched in 2002 following the publication of a report on addresses from the CNIG. This report is quite interesting and most of its points are still valid today, but not much has been done since then.</p>
+
+<p></p>
+
+<p>IGN and La Poste were tasked to create this National Address Register but their commercial interests (selling data) has so far blocked this 12-year old project. As a result, a French address datasets did exist but these datasets were created for specific purposes as opposed to the idea of creating a reference dataset for French addresses. For instance, La Poste uses three different addresses databases: for mail, for parcels, and for advertisements. &nbsp;</p>
+
+<p></p>
+
+Technically, how do you collect the data? Do you reuse existing datasets? &nbsp;
+
+<p></p>
+
+<p>We currently use three main data sources: OSM which gathers a bit more than two million addresses, the address datasets already available as open data (see list here) and, when necessary, the address data collected from the website of the cadastre. &nbsp;We also use FANTOIR data&nbsp;from the DGFIP which contains a list of all streets names and lieux-dits&nbsp;known from the Tax Office. This dataset is also available as open data. &nbsp;</p>
+
+<p></p>
+
+<p>These different sources are gathered in a common database. Then, we process the data to complete entries and remove duplications, and finally we package the whole thing for export. The aim is to provide harmonised content that brings together information from various sources, without redundancy. The process is run automatically every night with the exception of manual corrections that are done from OSM contributors. Data are then made available as csv files, shapefiles and in RDF format for semantic reuse. A csv version is published on github to enable everyone to follow the updates. We also produce an overlay map which allows contributors to improve the data more easily. &nbsp;OSM is used in priority because it is the only source from which we can collaboratively edit the data. If we need to add missing addresses, or correct them, we use OSM tools. &nbsp;</p>
+
+<p></p>
+
+Is your aim to build the reference address dataset for the country? &nbsp;
+
+<p></p>
+
+<p>This is a tricky question. What is a reference dataset? When you have more and more public services using OSM data, does that mean you are in front of a reference dataset? </p>
+
+<p></p>
+
+<p>According to the definition of the French National Mapping Council (CNIG), a geographic reference must enable every reuser to georeference its own data. This definition does not consider any particular reuse. On the other hand, its aim is to enable as much information as possible to be linked to the geographic reference. &nbsp;For the National Address Database to become a reference dataset, it is imperative that data is more exhaustive. Currently, there is data for 15 million reusable addresses (August 2014) of an estimated total of about 20 million. We have more in our cumulative database, but our export scripts ensure there is a minimum quality and coherency and release only after the necessary checks have been made. We are also working on the lieux-dits which are not address data point, but which are still used in many rural areas in France. &nbsp;</p>
+
+<p></p>
+
+<p>Beyond the question of the reference dataset, you can also see the work of OSM as complementary to the one of public entities. IGN has a goal of homogeneity in the exhaustivity of its information. This is due to its mission of ensuring an equal treatment of territories. We do not have such a constraint. For OSM, the density of data on a territory depends largely on the density of contributors. This is why we can offer a level of details sometimes superior, in particular in the main cities, but this is also the reason why we are still missing data for some d&eacute;partements. </p>
+
+<p></p>
+
+<p>Finally, we think to be well prepared for the semantic web and we already publish our data in RDF format by using a W3C ontology closed to the European INSPIRE model for address description. &nbsp;</p>
+
+<p></p>
+
+The reached agreement includes a dual license framework. You can reuse the data for free under an ODbL license, or you can opt for a non-share-alike license but you have to pay a fee. &nbsp;Is share-alike clause an obstacle for the private sector? &nbsp;
+
+<p></p>
+
+<p>I don&#039;t think so because the ODbL license does not prevent commercial reuse. It only requires to mention the source and to share any improvement of the data under the same license. For geographical data aiming at describing our land, this share-alike clause is essential to ensure that the common dataset is up to date. Lands change constantly, data improvements and updates must, therefore, be continuous, and the more people are contributing, the more efficient this process is. &nbsp;</p>
+
+<p></p>
+
+<p>I see it as a win-win situation compared to the previous one where you had multiple address datasets, maintained in closed silos with none of which were of acceptable quality for a key register as it is difficult to stay up to date on your own. &nbsp;</p>
+
+<p></p>
+
+<p>However, for some companies, share-alike is incompatible with their business model, and a double licensing scheme is a very good solution. Instead of taking part in improving and updating the data, they pay a fee which will be used to improve and update the data. &nbsp;</p>
+
+<p></p>
+
+And now, what is next for the National Address Database? &nbsp;
+
+<p></p>
+
+<p>We now need to put in place tools to facilitate contribution and data reuse. Concerning the contribution, we want to set-up a one-stop-shop application/API, separated from OSM contribution tool, to enable everyone to report errors, add corrections or upload data. This kind of tool would enable us to easily integrate partners into the project. On the reuse side, we should develop an API for geocoding and address autocompletion because not everybody will necessarily want to manipulate millions of addresses! &nbsp;</p>
+
+<p></p>
+
+As a last word, OSM is celebrating its ten years anniversary. What does that inspire you? &nbsp;
+
+<p></p>
+
+<p>First, the success and the power of OpenStreetMap lies in its community, much more than in its data. Our challenge is therefore to maintain and develop this community. This is what enables us to do projects such as the National Addresses Database, but also to be more reactive than traditional actors when it is needed, for instance with the current Ebola situation. Centralised and systematic approaches for cartography reached their limits. If we want better and more up to date map data, we will need to adopt a more decentralised way of doing things, with more contributors on the ground. Here&#8217;s to Ten More Years of the OpenStreetMap community!</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>&nbsp; &nbsp; </p>
+
+<p></p>
+
+<p></p>
+
+
+</div>
+
+<div class='item-footer'>
+  17:14  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='https://blog.openstreetmap.org'>Open Street Map (OSM) News</a>
+        (
+         <a href='https://blog.openstreetmap.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Sunday, 16 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.openstreetmap.org/2014/11/16/state-of-the-map-thanks/'>State Of The Map – Thanks</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Last week the OpenStreetMap community came together for their annual conference &#8220;State Of The Map&#8221; We need to say a huge thank you to all the people involved in organising this year&#8217;s conference, including Henk Hoff, Gonzalo Gabriel Perez, Fernando Sanz, and Nicolás Alvarez. They ba
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>Last week the OpenStreetMap community came together for their annual conference &#8220;State Of The Map&#8221;</p>
+<p>♦</p>
+<p>We need to say a huge thank you to all the people involved in organising this year&#8217;s conference, including Henk Hoff, Gonzalo Gabriel Perez, Fernando Sanz, and Nicolás Alvarez. They battled various problems, and came out with a triumphant success!</p>
+<p>A big thanks also to this year&#8217;s State Of The Map Sponsors:</p>
+<p>♦</p>
+<p>As it has been in previous years, the conference was wonderful meeting of OpenStreetMap friends, a showcase of diverse modes of map use/contribution, and a melting pot of ideas to take the project forwards. Another big thank you to all those who presented. We will be aiming to publish videos of the talks (always more easily said than done) [update Videos starting to appear here]  There are already some photos on the &#8216;sotm14&#8242; flickr tag. The program on the SOTM 2014 wiki page links off to various wiki-editable session sub-pages. Please feel free to edit these pages to add links to slide-decks and other coverage.</p>
+<p>Besides the general buzz and exciting talks, there were a couple of important extra things coming out of the conference:</p>
+OpenStreetMap Foundation Election Results
+<p>As has been the the norm in the past, we held the OpenStreetMap Foundation Annual General Meeting during the SOTM conference, and this included electing a new board. Frederik Ramm was re-elected, and we elected Kathleen Danielson and Paul Norman replacing Matt Amos and Simon Poole who were stepping down.</p>
+<p>Congratulations to the new board, and thanks to all the candidates and organisers of this election. More election details on the wiki</p>
+New feature &#8216;?&#8217;
+<p>As has also been the norm at past conferences, OpenStreetMap developers have prepared a little something special as a new feature to be launched on the weekend of the conference. This year they&#8217;ve added a new &#8216;?&#8217; button on the right hand side of the openstreetmap.org front page. Didn&#8217;t notice? Give it a try! More details coming soon.</p>
+New OpenStreetMap Latin America
+<p>Also during the conference there was a meeting of the brand new OpenStreetMap Latin America group. They have recently established themselves with a new &#8216;talk-latam&#8217; mailing list and they are planning a &#8220;State Of The Map Latin America&#8221; conference, to join the set of local spin-off conferences held around the world.</p>
+<p>This is fantastic news, and a great result to come out of our visit to Buenos Aires. We have aimed to organise the annual conference in a variety continents, to help spread OpenStreetMap enthusiasm to different corners of the globe. So this kind of group-forming and general boost is exactly what we are aiming for. But in fact the OpenStreetMap community of South America has always been quite impressive, so it&#8217;s only fair that the conference came there this year. And what a joy it was! Buenos Aires is a beautiful city, and the Argentinean OpenStreetMap contributors were wonderful hosts for State Of The Map 2014.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  02:03  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://ckan.org/blog/'>Comprehensive Knowledge Archive Network (CKAN) News</a>
+        (
+         <a href='http://feeds.feedburner.com/ckanproject'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Sunday, 09 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://ckan.org/2014/11/09/export-datasets-from-ckan-to-excel/'>Export Datasets from CKAN to Excel</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  ckanapi-exporter is a new API script that we&#8217;ve developed for exporting dataset metadata from CKAN to Excel-compatible CSV files. Check out the short presentation below, and visit ckanapi-exporter for more details:
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>ckanapi-exporter is a new API script that we&#8217;ve developed for exporting dataset metadata from CKAN to Excel-compatible CSV files. Check out the short presentation below, and visit ckanapi-exporter for more details:</p>
+
+
+
+
+</div>
+
+<div class='item-footer'>
+  20:01  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://www.w3.org/blog/data'>WWW Data Activity News</a>
+        (
+         <a href='http://www.w3.org/blog/data/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Friday, 07 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://www.w3.org/blog/data/2014/11/07/lisbon/'>Encouraging Commercial Use of Open Data</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  I went to Paris this week to give a talk at SemWeb.Pro, an event that, like SemTechBiz in Silicon Valley or SEMANTiCS in Germany/Austria, is firmly established in the annual calendar. These are events where businesses and other &#8216;real world&#8217; &#8230; Continue reading &#8594;
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  I went to Paris this week to give a talk at SemWeb.Pro, an event that, like SemTechBiz in Silicon Valley or SEMANTiCS in Germany/Austria, is firmly established in the annual calendar. These are events where businesses and other &#8216;real world&#8217; &#8230; Continue reading &#8594;
+
+</div>
+
+<div class='item-footer'>
+  12:21  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://ckan.org/blog/'>Comprehensive Knowledge Archive Network (CKAN) News</a>
+        (
+         <a href='http://feeds.feedburner.com/ckanproject'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Tuesday, 04 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://ckan.org/2014/11/04/ckan-extension-registry-share-and-find-ckan-extensions/'>CKAN Extension Registry – Share and Find CKAN Extensions</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  We are happy to announce the new CKAN Extensions Registry which lists available CKAN Extensions: extensions.ckan.org/ CKAN Extensions are a way to extend and alter the functionality of the base CKAN platform using the numerous extension points provided by CKAN. CKAN Extensions provide limitless possi
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>We are happy to announce the new CKAN Extensions Registry which lists available CKAN Extensions:</p>
+
+extensions.ckan.org/
+
+<p>CKAN Extensions are a way to extend and alter the functionality of the base CKAN platform using the numerous extension points provided by CKAN. CKAN Extensions provide limitless possibilities from altering the site look and feel to adding site pages, from new validation methods to modifying or adding APIs.</p>
+
+<p>There are currently 100 extensions already listed in the registry based on an initial survey of the extensions available &#8220;in the wild&#8221; (on github etc), and we will be adding more going forward.</p>
+
+<p>♦</p>
+
+Add Your Extension
+
+<p>Instructions for adding your extension to the registry are here:</p>
+
+<p>&lt;extensions.ckan.org/add/&gt;</p>
+
+All About Extensions
+
+<p>CKAN Extensions are a way to extend the functionality of the base CKAN platform using the numerous extension points provided by CKAN.</p>
+
+<p>Support for creating CKAN Extensions was first introduced in Autumn 2010 and has been extended multiple times ever since. Until now we have collected lists of extensions on the wiki but with the growing number of Extensions it is useful to have a proper registry (an Extension registry was one of the most requested items in the Roadmap consultation).</p>
+
+<p>Examples include:</p>
+
+<ul>
+<li>Geospatial Extension that adds geospatial capabilities to CKAN</li>
+<li>DCAT Extension to add a DCAT compliant metadata API to CKAN</li>
+<li>Custom Schemas Extension to provide easy, shareable custom schemas</li>
+<li>Commenting Extension to provide comments on Dataset pages using Disqus</li>
+</ul>
+
+Next Steps
+
+<p>At present, the Registry is confined to &#8220;functional&#8221; extensions which add new functionality to CKAN and are not specific to a given site.</p>
+
+<p>We are considering adding a section for theme oriented and site-specific extensions (e.g. support for metadata specific to a given site) since these extensions may be useful as inspiration and instruction to others even if they are not likely to be directly installed.</p>
+
+
+</div>
+
+<div class='item-footer'>
+  12:19  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='https://blog.openstreetmap.org'>Open Street Map (OSM) News</a>
+        (
+         <a href='https://blog.openstreetmap.org/feed/'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Sunday, 02 November 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.openstreetmap.org/2014/11/02/introducing-changeset-discussions/'>Introducing Changeset Discussions</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  Community and communication are key to the success of OpenStreetMap project, yet discussions about individual edits have always been clumsy and awkward. In this post, I&#8217;ll describe Changeset Discussions, a new feature of the OSM website which allows people to have public discussions around chan
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>Community and communication are key to the success of OpenStreetMap project, yet discussions about individual edits have always been clumsy and awkward. In this post, I&#8217;ll describe Changeset Discussions, a new feature of the OSM website which allows people to have public discussions around changesets.</p>
+<p>Before Changeset Discussions</p>
+<p>Before the introduction of Changeset Discussions, the only way to communicate about a changeset was either to use an out-of-band communication medium, such as mailing lists or forums, or to communicate directly with the author of the changeset by OSM message. Both of these methods are clumsy.</p>
+<p>The result is that it was often difficult to discuss changesets. New users rarely received any positive feedback or helpful instructions, and controversial edits were often handed off to the DWG instead of being able to have an public discussion about them.</p>
+<p>Introducing Changeset Discussions</p>
+<p>Changeset Discussions address this problem by letting users have a discussion about a changeset directly on osm associated with that changeset. This discussion is public, which allows for contributor collaboration.</p>
+<p>This feature works similarly to the comments placed on an OSM Note, where users may discuss a note publicly, for example to ask for more information from the note submitter.</p>
+<p>Leaving a Comment on a Changetset</p>
+<p>Changeset discussions now part of the OSM website. To use them, on the changeset page, on the left hand side, you can enter a comment:</p>
+<p>♦</p>
+<p>Then click submit, and the comment appears:</p>
+<p>♦</p>
+<p>Once Harry replies, as he&#8217;s done here:</p>
+<p>♦</p>
+<p>&#8230;I receive an email notification.</p>
+<p>Subscribing/Unsubscribing from a discussion</p>
+<p>Once you have made a comment to a changeset, you will receive notifcations about new comments placed on the changeset, keeping you in the loop and part of the discussion. You may also choose to watch a changeset discussion without participating in it, by using the<br>
+Subscribe button.</p>
+<p>♦</p>
+<p>If you don&#8217;t want to continue to watch the changeset, just press the Unsubscribe and you will no longer receive alerts of new comments.</p>
+<p> Use Cases for Changeset Discussions</p>
+<ul>
+<li>Welcoming New Users</li>
+</ul>
+<p>It&#8217;s been pointed out before that OSM has a problem in communicating with our new users. Changeset discussions can be a perfect place to congratulate on their first edit.It can also be an opportunity to help new users by giving them specific feedback where they might not have been as strong, giving them specific feedback on tagging, for example.</p>
+<ul>
+<li>Leaving Positive Feedback</li>
+</ul>
+<p>As a community, we don&#8217;t reciveve much positive feedback on our edits. With changeset discussions, you can leave a positive comment on a changeset expressing your thanks.</p>
+<ul>
+<li>Asking Questions About Controversial Edits</li>
+</ul>
+<p>If you have a question about an edit, such as why a name was changed, or a road was reclassified, you might want to ask the user why they made the change. Putting that question directly on the changeset gives the original author to receive feeback from you, but to respond to that feedback in a public forum. This should result in more open, public discussions and hopefully fewer conflicts.</p>
+<p>There&#8217;s an API</p>
+<p>Changeset Discussions also have an API component, which will be documented on the wiki, which will allow this feature to be integrated into OSM editing software directly, further connecting the editing process with the communication/community process.</p>
+<p>Special Thanks</p>
+<p>Changeset Discussions came into OSM by way of Google Summer of Code, specifically by our student Lukasz Gurdek, who I had the pleasure of mentoring. His work was of absolutely Grade A calibre and it was a pleasure working with him.</p>
+<p>Also, a huge debt of gratitude to Tom Hughes, who worked with myself and Luksaz to get this code merged into the OSM.org codebase. Without his hard work, this feature branch might have never made it into the website.</p>
+<p>And of course I want to thank Google for their Google Summer of Code project, which made this possible</p>
+
+
+</div>
+
+<div class='item-footer'>
+  20:08  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
+         <a href='http://ckan.org/blog/'>Comprehensive Knowledge Archive Network (CKAN) News</a>
+        (
+         <a href='http://feeds.feedburner.com/ckanproject'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <hr class='filler'>
+     </td><!-- filler -->
+      <td style='white-space: nowrap;'>
+       <span class='item-published'>Tuesday, 21 October 2014</span>
+      </td><!-- item published -->
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='http://ckan.org/2014/10/21/new-broken-link-checker-plugin-for-ckan/'>New Broken Link Checker Plugin for CKAN</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  deadoralive is a new broken-link checker service that works with CKAN and other sites, and ckanext-deadoralive is a CKAN plugin that you can install to integrate your CKAN site with the link checker. The pair have been developed by Open Knowledge as part of our work on the new version of Öppnadata, t
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  <p>deadoralive is a new broken-link checker service that works with CKAN and other sites, and ckanext-deadoralive is a CKAN plugin that you can install to integrate your CKAN site with the link checker. The pair have been developed by Open Knowledge as part of our work on the new version of Öppnadata, the Swedish national open data portal.</p>
+
+<p>This quick presentation gives an overview of the link checker&#8217;s features and design:</p>
+
+
+
+<p>For more details, see these blog posts:</p>
+
+<ul>
+<li>Features and screenshots</li>
+<li>Design and implementation</li>
+</ul>
+
+
+</div>
+
+<div class='item-footer'>
+  16:08  &bull;
+    <span class='item-time-ago-in-words'>
+       2 months ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+<!-- each item -->
+
+
+<div class='header'>
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td>
+    <td width='100%'>
+       <hr class='item-separator'>
+    </td>
+  </tr>
+</table>
+</div>
+
+</div> <!-- stream -->
+
+</body>
+</html>

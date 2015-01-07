@@ -1,0 +1,76 @@
+
+
+body {
+  font-family: sans-serif;
+}  
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.new-date {
+  text-align: center;
+}
+
+.feed {
+} 
+
+.feed-title   {
+  margin-bottom: 4px;
+}
+
+
+.item-title {
+  margin-top: 0;
+}
+
+.item-title .item-timestamp {
+  font-size: 12px; color: grey;
+}
+
+
+.item-body {
+  color: #222222;
+}
+
+.item-body p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* note: has no links for now; text gets "sanitized" 
+.item-body a,
+.item-body a:visited {
+  border-bottom: 1px dotted #666666;
+}
+
+.item-body a:hover {
+  border-bottom: 1px solid #666666;
+}
+*/
+
+
+
+/* fix: tipo - use separator -aaa */
+.item-seperator {
+   /* border: 1px solid red; */
+   /* height: 1px; */
+   /* color: grey; */
+  
+   /* border: 0.5px solid grey; */
+  /* sorry - not working for now;
+   *  use none */
+  border: none;
+}
+
