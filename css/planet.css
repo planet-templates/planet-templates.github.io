@@ -7,6 +7,10 @@ body
 }
 
 
+div.preview-header {
+  margin-left: 11px;
+}
+
 img.preview {
   width: 350px;
   height: 350px;
@@ -14,6 +18,7 @@ img.preview {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  margin-top: 4px;
 }
 
 
