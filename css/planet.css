@@ -3,7 +3,7 @@
 
 body
 {
-  font-family:  Helvetica,Arial,sans-serif; 
+  font-family:  Helvetica,Arial,sans-serif;
 }
 
 
@@ -13,7 +13,7 @@ div.preview-header {
 
 img.preview {
   width: 350px;
-  height: 350px;
+  /* height: 350px;   */  /* use auto for height - why? why not?? */
   border: 1px solid silver;  /* use #eeeeee */
   margin-left: 10px;
   margin-right: 10px;
@@ -25,13 +25,13 @@ img.preview {
 
 h1
 {
-  border-bottom: 1px solid black;   
+  border-bottom: 1px solid black;
 }
 
 h2
 {
   border-bottom: 1px solid black;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 
@@ -82,7 +82,7 @@ a:hover {
 
 
 #content {
-  padding: 0.5em; 
+  padding: 0.5em;
 }
 
 
@@ -90,7 +90,7 @@ a:hover {
   to pre tags followed by code e.g. <pre><code> => <pre class='programlisting'><code>
 
    for now assume all pres are programlistings
-*/ 
+*/
 pre,
 .programlisting
 {
@@ -121,7 +121,7 @@ pre,
 
 .toc p  /* first paragraph in toc is toc-title;
            use prediciate too to make sure we only get the first one??
-           e.g. p:first-child ?? 
+           e.g. p:first-child ??
           */
 {
    text-align: center;
@@ -153,6 +153,3 @@ pre,
     background-color: #333333; }
     .banner a:hover {
       text-decoration: underline; }
-
-
-
