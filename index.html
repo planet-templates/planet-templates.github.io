@@ -7,6 +7,19 @@ title: Gallery
 <h1>{{ page.title }}</h1>
 -->
 
+<div id="gallery">
+  {% for template in site.data.templates %}     
+  <div class='preview-header'>
+        <b>{{ template.name }}</b>
+        <a href='{{ template.demo_url }}'>[Live Demo]</a>
+        <a href='http://github.com/{{ template.github }}'>[More Info »]</a>
+      </div>
+      <img src='{{ template.preview.url }}' class='preview' alt='Planet {{ template.name }} Template'>
+  {% endfor %}
+</div>
+
+
+
 <table>
   <tr>
     <td valign="top">
