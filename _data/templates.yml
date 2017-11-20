@@ -1,0 +1,43 @@
+#################################
+# templates
+
+- name:        Blank Standard
+  demo_url:    gallery/opendata.html
+  github:      planet-templates/planet-blank
+  preview_url: https://github.com/planet-templates/planet-blank/raw/master/screenshot.png
+
+- name:        Blank Cards
+  demo_url:    gallery/opendata.cards.html
+  github:      planet-templates/planet-blank
+  preview_url: https://github.com/planet-templates/planet-blank/raw/master/screenshot-cards.png
+
+- name:        Digest
+  demo_url:    gallery/opendata.digest.html
+  github:      planet-templates/planet-digest
+  preview_url: https://github.com/planet-templates/planet-digest/raw/master/screenshot.png
+
+- name:        Hacker
+  demo_url:    gallery/opendata.hacker.html
+  github:      planet-templates/planet-hacker
+  preview_url: https://github.com/planet-templates/planet-hacker/raw/master/screenshot.png
+
+- name:        Forty
+  demo_url:    gallery/opendata.forty.html
+  github:      planet-templates/planet-forty
+  preview_url: https://github.com/planet-templates/planet-forty/raw/master/screenshot.png
+
+- name:        News
+  demo_url:    gallery/opendata.news.html
+  github:      planet-templates/planet-news
+  preview_url: https://github.com/planet-templates/planet-news/raw/master/screenshot.png
+
+- name:        Paper
+  demo_url:    gallery/opendata.paper.html
+  github:      planet-templates/planet-paper
+  preview_url: https://github.com/planet-templates/planet-paper/raw/master/screenshot.png
+
+- name:        Top
+  demo_url:    gallery/opendata.top.html
+  github:      planet-templates/planet-top
+  preview_url: https://github.com/planet-templates/planet-top/raw/master/screenshot.png
+
