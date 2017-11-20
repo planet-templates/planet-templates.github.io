@@ -10,7 +10,7 @@ body
 /* note: use flexblox layout for gallery
  */
 #gallery {
-  display: f  lex;
+  display: flex;
   flex-flow:  row wrap;
 }
 
