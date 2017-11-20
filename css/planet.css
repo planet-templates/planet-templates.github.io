@@ -7,11 +7,18 @@ body
 }
 
 
-div.preview-header {
+/* note: use flexblox layout for gallery
+ */
+#gallery {
+  display: f  lex;
+  flex-flow:  row wrap;
+}
+
+#gallery div.preview-header {
   margin-left: 11px;
 }
 
-img.preview {
+#gallery img.preview {
   width: 350px;
   /* height: 350px;   */  /* use auto for height - why? why not?? */
   border: 1px solid silver;  /* use #eeeeee */
